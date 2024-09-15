@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукції</title>
+    <style type="text/css" media="screen">
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .catalog-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        .catalog-item img {
+            border: 2px solid #ddd;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+        }
+        .expired {
+            color: red;
+        }
+        .catalog-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="catalog-header" style="text-align: center; color: #4B0082;">Каталог продукції</h1>
+
+    <section class="catalog">
+
+        <!-- Перший товар -->
+        <div class="catalog-item" id="item-1">
+            <img src="cream.jpg" alt="Зволожуючий крем" height="150" title="Зволожуючий крем для обличчя" border="1">
+
+            <map name="product-map" id="product-map" target="_self" tabindex="0">
+                <area shape="rect" coords="34,44,270,350" id="area1" title="Натисніть, щоб дізнатися більше" class="area-class" onfocus="alert('Фокус на товарі 1');">
+            </map>
+
+            <h2><mark>Вид:</mark> Зволожуючий крем</h2>
+            <p><strong>Марка:</strong> Гармонія</p>
+            <p><bdo lang="uk">Виробник: Україна</bdo></p>
+            <p><span style="color: green;">Термін придатності:</span> <time datetime="2025-12-31" lang="uk">31 грудня 2025</time></p>
+            <p><mark datetime="2024-09-15">Ціна:</mark> 350 грн</p>
+            <sup style="color: green;" id="price-sup">знижка 10%</sup>
+        </div>
+
+        <!-- Другий товар -->
+        <div class="catalog-item" id="item-2">
+            <img src="shampoo.jpg" alt="Шампунь для волосся" height="150" title="Шампунь для сухого волосся" border="1">
+
+            <map name="product-map" id="product-map2" target="_self" tabindex="1">
+                <area shape="rect" coords="50,50,270,370" id="area2" title="Натисніть, щоб дізнатися більше" class="area-class" onfocus="alert('Фокус на товарі 2');">
+            </map>
+
+            <h2><mark>Вид:</mark> Шампунь для волосся</h2>
+            <p><strong>Марка:</strong> Natura Siberica</p>
+            <p><bdo lang="en">Виробник: Естонія</bdo></p>
+            <p><span style="color: green;">Термін придатності:</span> <time datetime="2024-05-30" lang="uk">30 травня 2024</time></p>
+            <p><mark datetime="2024-09-15">Ціна:</mark> 150 грн</p>
+            <sub style="color: red;" class="discount-sub" title="Може бути неактуальним">без знижки</sub>
+        </div>
+
+    </section>
+
+    <aside class="aside-section" id="aside">
+        <p>Інформація про спеціальні пропозиції: всі продукти зі знижкою <wbr class="wbr-class"> до 15%.</p>
+    </aside>
+
+    <footer class="footer-class" title="Підвал сторінки">
+        <p style="text-align: center;">© 2024 Косметична Фірма "Гармонія". Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
