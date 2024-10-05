@@ -4,182 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Косметична Фірма "Гармонія"</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" sizes="16x16" title="main-style" rel="stylesheet" class="main-link" media="all">
+
     <style>
-        /* Основні стилі для всієї сторінки */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
         body {
-            background-color: #f7fafc; /* Світлий фон */
-            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            font-family: 'Roboto', sans-serif;
             color: #333;
-            line-height: 1.6;
+            padding: 0 20px;
         }
 
-        header {
-            background-color: #4B0082; /* Насичений індиговий колір для хедеру */
-            padding: 20px 0;
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #4B0082;
             text-align: center;
         }
 
-        header a {
-            color: #fff; /* Білий колір тексту для посилань */
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        section {
+            margin-top: auto;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-left: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 2px solid #4B0082;
+            border-top-style: dashed; 
+            border-bottom-color: #D2691E; 
+        }
+
+        nav {
+            text-align: center;
+            background-color: #4B0082;
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 8px 16px;
-            transition: background-color 0.3s ease;
-            border-radius: 5px; /* Додаємо округлі краї */
         }
 
-        header a:hover {
-            background-color: #D2691E; /* Оранжевий колір при наведенні */
-        }
-
-        /* Основні стилі для заголовків */
-        h1 {
+        .nav-link:hover {
             color: #D2691E;
-            text-align: center;
-            font-size: 36px;
-            margin-top: 20px;
         }
 
-        h5 {
-            text-align: center;
-            font-size: 20px;
-            color: #4B0082;
-            margin-bottom: 20px;
-        }
-
-        /* Секція "Про нас" */
-        .section-header {
-            font-size: 24px;
-            color: #4B0082;
-            font-weight: bold;
-            text-align: left;
-            padding: 10px 15px;
-            border-bottom: 2px solid #4B0082;
-            margin-top: 40px;
-        }
-
-        .intro, .details {
-            padding: 0 15px;
-            text-align: justify;
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-
-        /* Стилі для списків продуктів */
         ul {
-            list-style-type: square;
-            padding-left: 40px;
-            margin-bottom: 20px;
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 10px;
         }
 
-        ul li {
-            font-size: 18px;
-            margin-bottom: 10px;
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
         }
 
-        /* Стилі для "новинок" */
-        big#new-items {
-            color: red;
-            font-weight: bold;
-        }
-
-        /* Стилі для посилань на новини та каталог */
-        a.cta {
-            display: inline-block;
-            background-color: #4B0082;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin: 10px;
-        }
-
-        a.cta:hover {
-            background-color: #D2691E;
-        }
-
-        /* Стилі для футера */
         footer {
-            background-color: #f0f8ff;
             text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            color: #333;
-            margin-top: 40px;
-            border-top: 3px solid #D2691E;
+            margin-top: 30px;
+            background-color: #4B0082;
+            padding: 15px;
+            color: #fff;
+            max-width: 100%; 
+            overflow: hidden; 
         }
-
-        footer small {
-            display: block;
-        }
-
-        /* Додаткові стилі для таблиць або картинок */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .highlight {
-            background-color: yellow;
-            outline: 2px solid green;
-        }
-
     </style>
 </head>
 <body>
 
     <header>
-        <a href="Katalog.html">Каталог товарів</a>
-        <a href="novunu.html">Новини</a>
+        <nav class="main-nav">
+            <a href="Katalog.html" class="nav-link" accesskey="K">Каталог</a>
+            <a href="novunu.html" class="nav-link" accesskey="N">Новини</a>
+        </nav>
     </header>
 
-    <h1 id="main-title">Ласкаво просимо до Косметичної Фірми "Гармонія"</h1>
+    <main>
+        <section>
+            <h1>Ласкаво просимо до Косметичної Фірми "Гармонія"</h1>
+            <p>Ми створюємо красу для Вас. Косметична фірма "Гармонія" спеціалізується на догляді за шкірою, волоссям та тілом, пропонуючи найкращі засоби для вашого здоров'я та краси.</p>
+        </section>
 
-    <h5>Ми створюємо красу для Вас</h5>
+        <section>
+            <h2>Про нас</h2>
+            <p>Фірма "Гармонія" заснована в 2010 році і є одним з лідерів на ринку косметики. Ми співпрацюємо з провідними брендами, пропонуючи якісні продукти за конкурентними цінами.</p>
+        </section>
 
-    <p class="intro">
-        Фірма "Гармонія" – це ваш надійний партнер у сфері краси. Ми спеціалізуємося на продажу косметичних засобів для догляду за шкірою, волоссям, тілом та нігтями. 
-        Завдяки рокам досвіду та інноваційним рішенням, ми пропонуємо лише найкращі засоби для підтримки вашої природної краси.
-    </p>
+        <section>
+            <h2>Наш асортимент</h2>
+            <ul compact value="3" title="Асортимент косметики" class="product-list">
+                <li value="1" title="Креми для обличчя" class="face-creams">Креми для обличчя</li>
+                <li value="2" title="Догляд за волоссям" class="hair-care">Засоби для догляду за волоссям</li>
+                <li value="3" title="Декоративна косметика" class="decorative-cosmetics">Декоративна косметика</li>
+                <li value="4" title="Догляд за нігтями" class="nail-care">Засоби для догляду за нігтями</li>
+            </ul>
+        </section>
 
-    <h6 class="section-header">Про нас</h6>
-    <p class="details">
-        Косметична фірма "Гармонія" була заснована у 2010 році. Ми співпрацюємо з провідними виробниками косметики по всьому світу, що дозволяє пропонувати клієнтам якісні товари за конкурентними цінами.
-    </p>
+        <section>
+            <h2>Наші цінності</h2>
+            <p>Ми дбаємо про екологію та здоров'я наших клієнтів. Наша продукція виготовлена з натуральних компонентів і не шкодить довкіллю.</p>
+        </section>
 
-    <h6 class="section-header">Наш асортимент</h6>
-    <p class="details">
-        У нас ви знайдете:
-        <ul>
-            <li>Креми для обличчя та тіла</li>
-            <li>Засоби для догляду за волоссям</li>
-            <li>Декоративна косметика</li>
-            <li>Аромати для дому</li>
-            <li>Засоби для догляду за нігтями</li>
-            <li>Сонцезахисна косметика</li>
-        </ul>
-        Деякі продукти вже не доступні, наприклад, <strike>застарілі продукти</strike>, але ми маємо широкий вибір нових засобів, як <big id="new-items" title="новинки">новинки сезону</big>.
-    </p>
+        <section>
+            <h2>Інші товари</h2>
+            <ol type="1" style="padding-left: 20px;" id="product-ol" lang="uk" class="product-list">
+                <li value="1" class="organic-products">Органічні креми</li>
+                <li value="2" class="herbal-products">Трав'яні шампуні</li>
+                <li value="3" class="vegan-products">Веганська косметика</li>
+            </ol>
+        </section>
 
-    <div style="text-align: center;">
-        <a href="Katalog.html" class="cta">Переглянути каталог товарів</a>
-        <a href="novunu.html" class="cta">Переглянути останні новини</a>
-    </div>
+        <section>
+            <h2>Контакти</h2>
+            <dl dir="ltr" id="contact-dl" title="Контактна інформація">
+                <dt>Адреса:</dt>
+                <dd title="Офіс у Києві" style="color: green;">Київ, вул. Центральна 12</dd>
+                <dt>Телефон:</dt>
+                <dd title="Номер телефону">+3801234567</dd>
+            </dl>
+        </section>
+
+        <marquee truespeed="true" scrollamount="4" behavior="scroll" loop="3" hspace="20">
+            Акція! Знижки на всі товари до кінця місяця!
+        </marquee>
+
+    </main>
 
     <footer>
-        <small>© 2024 Фірма "Гармонія". Всі права захищені.</small>
-        <small>Адреса: вул. Краси, 15, м. Київ, Україна. Телефон: +380 44 123 4567</small>
+        <p>&copy; 2024 Фірма "Гармонія". Всі права захищені.</p>
+        <p>Інформація за номером: +3801234567</p>
     </footer>
+
+    <bdi class="language-direction">LTR</bdi>
+    <nobr class="no-break-text">Текст без розриву</nobr>
 
 </body>
 </html>
