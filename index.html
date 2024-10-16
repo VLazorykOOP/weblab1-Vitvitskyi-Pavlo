@@ -86,7 +86,16 @@
             color: #fff;
             max-width: 100%; 
             overflow: hidden; 
-        }
+        
+    }
+    .sublist {
+        margin-top: 5px;
+        margin-left: 7px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    
     </style>
 </head>
 <body>
@@ -125,13 +134,19 @@
         </section>
 
         <section>
-            <h2>Інші товари</h2>
-            <ol type="1" style="padding-left: 20px;" id="product-ol" lang="uk" class="product-list">
-                <li value="1" class="organic-products">Органічні креми</li>
-                <li value="2" class="herbal-products">Трав'яні шампуні</li>
-                <li value="3" class="vegan-products">Веганська косметика</li>
-            </ol>
-        </section>
+    <h2>Інші товари</h2>
+    <ol type="1" style="padding-left: 20px;" id="product-ol" lang="uk" class="product-list">
+        <li value="1" class="organic-products">Органічні креми</li>
+        <ol type="1" style="list-style-type: decimal;" class="sublist">
+            <li>Крем для обличчя</li>
+            <li>Крем для рук</li>
+            <li>Крем для тіла</li>
+        </ol>
+        <li value="2" class="herbal-products">Трав'яні шампуні</li>
+        <li value="3" class="vegan-products">Веганська косметика</li>
+    </ol>
+</section>
+
 
         <section>
             <h2>Контакти</h2>
